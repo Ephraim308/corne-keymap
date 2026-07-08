@@ -14,9 +14,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build ZMK
-        uses: zmkfirmware/zmk-build-action@main
+        uses: zmkfirmware/zmk/.github/actions/build@main
         with:
-          board: "nice_nano_v2"
+          board: nice_nano_v2
           shield: "corne_left corne_right"
 
       - name: Upload firmware
